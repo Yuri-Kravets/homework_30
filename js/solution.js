@@ -14,16 +14,22 @@
 let liCount = document.querySelectorAll('li');
 let liData = document.querySelector('ul').innerText;
 let li = document.querySelector('li');
+let arr = Array.from(liData);
 
-let arr = Array.from(document.querySelector('ul').innerText);
-console.log(arr);
-// for(let node of liData) {
-//     console.log(node);
-// }
 
+
+
+
+
+for(let node of liData) {
+    console.log(node);
+}
+
+
+// console.log(arr);
 console.log(liCount);
 console.log(liData);
-console.log(li);
+//console.log(li);
 
 
 
