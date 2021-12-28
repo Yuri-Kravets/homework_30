@@ -10,26 +10,31 @@
 // console.log(tester);
 
 
-
+let bodyEl = document.body
 let liCount = document.querySelectorAll('li');
 let liData = document.querySelector('ul').innerText;
-let li = document.querySelector('li');
-let arr = Array.from(liData);
+
+let arr = Array.from(document.querySelectorAll('ul>li'));
+
+//console.log(li.textContent);
 
 
 
-
-
-
-for(let node of liData) {
-    console.log(node);
+for (const li of document.querySelectorAll('ul>li')) {
+    console.log(li.textContent);
 }
 
 
-// console.log(arr);
-console.log(liCount);
-console.log(liData);
-//console.log(li);
+
+// for(let node of liData) {
+//     //console.log(node);
+// }
+
+
+console.log(arr);
+// console.log(liCount);
+//console.log(liData);
+
 
 
 
